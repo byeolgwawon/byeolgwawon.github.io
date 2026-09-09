@@ -404,3 +404,17 @@ a {
     scroll-behavior: auto;
   }
 }
+
+
+.header-inner {
+  justify-content: flex-end;
+}
+
+.lang-link {
+  color: var(--gold) !important;
+}
+
+.lang-link:hover,
+.lang-link:focus-visible {
+  color: var(--text) !important;
+}
