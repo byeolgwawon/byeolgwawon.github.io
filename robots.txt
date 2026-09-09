@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://byeolgwawon.github.io/sitemap.xml
