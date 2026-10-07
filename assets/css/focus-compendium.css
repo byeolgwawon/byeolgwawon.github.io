@@ -74,7 +74,9 @@ h1 {
   font-size: 0.86rem;
 }
 .hero-art img {
-  width: min(100%, 640px);
+  width: min(100%, 520px);
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
   margin-inline: auto;
   filter: drop-shadow(0 30px 42px rgba(0,0,0,.25));
 }
@@ -132,7 +134,9 @@ h1 {
 .feature p { margin: 8px 0 0; color: var(--muted); }
 
 .map-art img {
-  width: min(100%, 620px);
+  width: min(100%, 500px);
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
   margin-inline: auto;
 }
 .map-copy p { color: var(--muted); }
@@ -189,7 +193,7 @@ h1 {
   .hero { padding-top: 64px; }
   .hero-grid, .two-col { grid-template-columns: 1fr; }
   .hero-art { order: -1; }
-  .hero-art img { width: min(100%, 520px); }
+  .hero-art img { width: min(100%, 420px); }
   .flow { grid-template-columns: 1fr; }
   .screenshot-placeholder { grid-template-columns: 1fr; }
   .shot { min-height: 260px; }
@@ -386,5 +390,12 @@ h1 {
 
   .guardian-shot {
     width: min(100%, 430px);
+  }
+}
+
+
+@media (max-width: 820px) {
+  .map-art img {
+    width: min(100%, 420px);
   }
 }
